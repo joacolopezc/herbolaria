@@ -28,21 +28,6 @@
   margin-bottom: 20px;
   margin-top: 20px;
 }
-* body h4 {
-  font-size: 30px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-* body h5 {
-  font-size: 30px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-* body h6 {
-  font-size: 30px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
 * body p {
   font-size: 25px;
 }
@@ -68,9 +53,6 @@
   padding: 20px;
   margin: 20px;
   margin-top: 20px;
-}
-* body main .cuando h3 {
-  margin-bottom: 20px;
 }
 * body main .cuando a {
   text-decoration: none;
