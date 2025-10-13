@@ -31,8 +31,7 @@
   color: white;
 }
 * body header {
-  background-color: #885D07;
-  opacity: 0.93;
+  /* background-color: $colorp; */
   text-align: center;
   padding-top: 2%;
   color: white;
@@ -53,7 +52,7 @@
   transform: scale(1.05);
 }
 * body .card {
-  background-color: #A67107;
+  background-color: #998170;
   opacity: 0.93;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -98,7 +97,6 @@
      object-fit: cover;
 }
 * body footer {
-  background-color: #885D07;
   opacity: 0.93;
   text-align: center;
   padding: 10px;
@@ -106,4 +104,13 @@
   position: relative;
   bottom: 0;
   width: 100%;
+}
+* body footer .comparto {
+  margin-top: 10px;
+}
+* body footer .comparto p {
+  font-family: "Architects Daughter", cursive;
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 10px;
 }/*# sourceMappingURL=styles.css.map */
