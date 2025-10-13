@@ -8,65 +8,133 @@
         <title>Taller de Herbolaria</title>
     </head>
     <body>
+        <!-- HEADER -->
         <header>
-            <nav class="nav">
-                <div class="logo">
-                    <h1>HERBOLARIA</h1>
-                    <h2>taller y arte con plantas medicinales</h2>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <div class="texto">
-                <h2>Sobre mí</h2>
-                <p>Soy <strong>Lorena Camilotto</strong>, herbolaria. Desde mi experiencia con las plantas, con diferentes miradas y estudios de las mismas, descubrí el poder que tienen y como acompañan nuestros procesos, desde el paseo medicinal con sus aromas y texturas aprendiendo desde la observación hasta llegar a la elaboración del producto que deseamos realizar, por todo eso... te invito a unirte al mundo herbal.</p>
+            <div class="lead text-center py-3">
+                <h1>HERBOLARIA</h1>
+                <p>taller y arte con plantas medicinales</p>
             </div>
-            <div class="container">
-                <div class="lista">
-                    <h3>Grupal, dinámico y divertido!</h3>
-                    <p>Todo relacionado a plantas medicinales, comestibles y aromáticas</p>
-                </div>
-                <div class="que">
-                    <h3>Que vamos a aprender?</h3>
-                    <ul>
-                        <li class="lista2">Reconocerlas y recolectarlas en un paseo medicinal</li>
-                        <li class="lista2">Arte con ellas</li>
-                        <li class="lista2">Infusiones</li>
-                        <li class="lista2">Blends para el mate</li>
-                        <li class="lista2">Tinturas madres</li>
-                        <li class="lista2">Microdosis</li>
-                        <li class="lista2">Sahumos</li>
-                        <li class="lista2">Aceites relajantes</li>
-                        <li class="lista2">Jarabes</li>
-                        <li class="lista2">Tónicos capilares</li>
-                        <li class="lista2">Cataplasmas</li>
-                        <li class="lista2">Protectores Áuricos</li>
-                        <li class="lista2">Aguas Floridas</li>
+            <nav class="navbar">
+                <div class="container d-flex justify-content-center">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#sobreMi">sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#taller">el taller</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#info">información</a>
+                        </li>
                     </ul>
                 </div>
-            </div>
-            <div class="cuando">
-                    <h3>Cuando?</h3>
-                    <p>
-                        <ul>
-                            <li>📅 Domingo 12 de octubre</li>
-                            <li>⏰ De 9 a 11 hs</li>
-                            <li>🏠 En <a href="https://www.instagram.com/tierra.mailott/">@tierra.mailott</a>. Sargento Cabral 227, Villa Allende</li>
-                            <li>☎️ 351-5194114</li>
-                            <li>Disfrutá de un espacio único para aprender, explorar y conectar con las plantas medicinales.</li>
-                        </ul>
-                    </p>
+            </nav>
+        </header>        
+        <!-- HEADER -->
+        
+
+        <!-- MAIN -->
+        <main>
+            <!-- SOBRE MI -->
+            <div class="card">
+                <div class="card-body" id="sobreMi">
+                    <h2 class="card-title">Sobre Mi</h2>
+                    <p class="card-text">Soy <strong>Lorena Camilotto</strong>, herbolaria. Desde mi experiencia con las plantas, con diferentes miradas y estudios de las mismas, descubrí el poder que tienen y como acompañan nuestros procesos, desde el paseo medicinal con sus aromas y texturas aprendiendo desde la observación hasta llegar a la elaboración del producto que deseamos realizar, por todo eso... te invito a unirte al mundo herbal.</p>
                 </div>
-            <div class="pago">
-                <h3>Detalles para participar:</h3>
-                <p>Es solo presencial. Se abona por adelantado(de ese modo se reserva el lugar)</p>
-                <p>Se trabaja al aire libre y bajo techo. Trae cuaderno, lapicera y tu mate.</p>
-                <p>!Son dos horas nutritivas!</p>
-                <p>💵 Valor: $10,000</p>
-                <p>➡️ Forma de pago: Transferencia al alias tierramailott o cuenta Lorena Camilotto.</p>
-                <p>Es un camino de ida y quiero que todos aprendamos sobre plantas medicinales y cómo utilizarlas.</p>
+                <img src="./images/loredes.jpeg" class="card-img-bottom" alt="card-img-bottom">
             </div>
+            <!-- SOBRE MI -->
+
+            <!-- QUE VAMOS A APRENDER -->
+            <div class="card" id="taller">
+                <div class="card-body">
+                    <div class="aprender">
+                        <h3>Grupal, dinámico y divertido!</h3>
+                        <p>Todo relacionado a plantas medicinales, comestibles y aromáticas</p>
+                    </div>
+                    <div class="aprenderLista">
+                        <h4>Que vamos a aprender?</h4>
+                        <ul>
+                            <li class="lista2">Reconocerlas y recolectarlas en un paseo medicinal</li>
+                            <li class="lista2">Arte con ellas</li>
+                            <li class="lista2">Infusiones</li>
+                            <li class="lista2">Blends para el mate</li>
+                            <li class="lista2">Tinturas madres</li>
+                            <li class="lista2">Microdosis</li>
+                            <li class="lista2">Sahumos</li>
+                            <li class="lista2">Aceites relajantes</li>
+                            <li class="lista2">Jarabes</li>
+                            <li class="lista2">Tónicos capilares</li>
+                            <li class="lista2">Cataplasmas</li>
+                            <li class="lista2">Protectores Áuricos</li>
+                            <li class="lista2">Aguas Floridas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- QUE VAMOS A APRENDER -->
+
+
+            <!-- CARRUSEL -->
+            <div id="carouselWithControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/loredes.jpeg" class="d-block w-100" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/herbolaria1.jpeg" class="d-block w-100" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/herbolaria2.jpeg" class="d-block w-100" alt="Slide 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselWithControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselWithControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- CARRUSEL -->
+            
+
+            <!-- INFO -->
+            <div class="card" id="info">
+                <div class="card-body">
+                    <div class="cuando">
+                        <h3>Cuando?</h3>
+                        <p>
+                            <ul>
+                                <li>📅 Domingo 12 de octubre</li>
+                                <li>⏰ De 9 a 11 hs</li>
+                                <li>🏠 En Sargento Cabral 227, Villa Allende</li>
+                                <li>Disfrutá de un espacio único para aprender, explorar y conectar con las plantas medicinales.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Detalles para participar:</h3>
+                    <p class="card-text">Es solo presencial. Se abona por adelantado(de ese modo se reserva el lugar)</p>
+                    <p class="card-text">Se trabaja al aire libre y bajo techo. Trae cuaderno, lapicera y tu mate.</p>
+                    <p class="card-text">!Son dos horas nutritivas!</p>
+                    <p class="card-text">💵 Valor: $10,000</p>
+                    <p class="card-text">➡️ Forma de pago: Transferencia al alias tierramailott o cuenta Lorena Camilotto.</p>
+                    <p class="card-text">Es un camino de ida y quiero que todos aprendamos sobre plantas medicinales y cómo utilizarlas.</p>
+                </div>
+            </div>
+            
+            <!-- INFO -->
         </main>
+        <!-- MAIN -->
+        
+
+        <!-- FOOTER -->
         <footer>
             <div class="comparto">
                 <p>Comparto con respeto y amor</p>
@@ -74,8 +142,13 @@
                 <p>Lor Camilotto</p>
             </div>
         </footer>
+        <!-- FOOTER -->
 
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
     </body>
 </html>

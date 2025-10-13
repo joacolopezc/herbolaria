@@ -1,75 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 * {
-  margin: 0 auto;
-  padding: 0;
   box-sizing: border-box;
-  list-style: none;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Nunito", sans-serif;
+  scroll-behavior: smooth;
 }
 * body {
   background-image: url("../images/herbolaria2.jpeg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
-* body header {
-  padding-top: 5%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+* body a {
+  text-decoration: none;
+  color: white !important;
 }
-* body header .nav {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
-  padding: 20px;
-  margin: 20px;
-}
-* body h3 {
-  font-size: 30px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+* body a:hover {
+  color: burlywood;
 }
 * body p {
-  font-size: 25px;
+  font-size: 20px;
 }
 * body li {
-  font-size: 25px;
-  margin: 10px;
+  list-style: none;
 }
-* body main {
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
-  padding: 10px;
-  margin: 10px;
-}
-* body main .container {
-  padding: 30px;
-}
-* body main .texto {
-  padding: 20px;
-  margin: 20px;
-}
-* body main .cuando {
-  padding: 20px;
-  margin: 20px;
-  margin-top: 20px;
-}
-* body main .cuando a {
-  text-decoration: none;
+* body h2 {
+  font-family: "Architects Daughter", cursive;
+  font-weight: bold;
   color: white;
 }
-* body main .cuando a a:hover {
-  text-decoration: none;
-  color: black;
+* body header {
+  background-color: #885D07;
+  opacity: 0.93;
+  text-align: center;
+  padding-top: 2%;
+  color: white;
 }
-* body main .pago {
+* body header h1 {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Architects Daughter", cursive;
+}
+* body header .navbar .nav .nav-item {
+  border: 1px solid white;
+  border-radius: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: transform 0.2s;
+}
+* body header .navbar .nav .nav-item:hover {
+  transform: scale(1.05);
+}
+* body .card {
+  background-color: #A67107;
+  opacity: 0.93;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 20px;
   margin: 20px;
+  transition: transform 0.2s;
+}
+* body .card:hover {
+  transform: scale(1.01);
+}
+* body .card h3, * body .card h4 {
+  font-weight: bold;
+  font-family: "Architects Daughter", cursive;
+  color: white;
+}
+* body .card .card-body {
+  color: white;
+  text-align: center;
+}
+* body .card .card-body p {
+  font-size: 22px;
+}
+* body .card .card-body li {
+  font-size: 19px;
+}
+* body .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 500px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+* body #carouselWithControls .carousel-item {
+  height: 600px;
+  padding: 2%;
+}
+* body #carouselWithControls .carousel-item img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 * body footer {
+  background-color: #885D07;
+  opacity: 0.93;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
   padding: 10px;
-  margin: 20px;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */
