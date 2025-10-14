@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="assets/styles.css">
         <title>Taller de Herbolaria</title>
     </head>
@@ -18,13 +19,13 @@
                 <div class="container d-flex justify-content-center">
                     <ul class="nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#sobreMi">sobre mi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#taller">el taller</a>
+                            <a class="nav-link active" aria-current="page" href="#taller">taller</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#info">información</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -36,24 +37,25 @@
         <!-- MAIN -->
         <main>
             <!-- SOBRE MI -->
-            <div class="card">
-                <div class="card-body" id="sobreMi">
+            <div class="card" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
+                <div class="card-body">
                     <h2 class="card-title">Sobre Mi</h2>
-                    <p class="card-text">Soy <strong>Lorena Camilotto</strong>, herbolaria. Desde mi experiencia con las plantas, con diferentes miradas y estudios de las mismas, descubrí el poder que tienen y como acompañan nuestros procesos, desde el paseo medicinal con sus aromas y texturas aprendiendo desde la observación hasta llegar a la elaboración del producto que deseamos realizar, por todo eso... te invito a unirte al mundo herbal.</p>
+                    <p class="card-text">Soy <strong>Lorena Camilotto</strong>. Desde mi experiencia con las plantas, con diferentes miradas y estudios de las mismas, descubrí el poder que tienen y como acompañan nuestros procesos, desde el paseo medicinal con sus aromas y texturas aprendiendo desde la observación hasta llegar a la elaboración del producto que deseamos realizar, por todo eso... te invito a unirte al mundo herbal.</p>
                 </div>
                 <img src="./images/loredes.jpeg" class="card-img-bottom" alt="card-img-bottom">
             </div>
             <!-- SOBRE MI -->
 
             <!-- QUE VAMOS A APRENDER -->
-            <div class="card" id="taller">
+            <div class="card" id="taller" data-aos="flip-left">
                 <div class="card-body">
                     <div class="aprender">
                         <h3>Grupal, dinámico y divertido!</h3>
                         <p>Todo relacionado a plantas medicinales, comestibles y aromáticas</p>
                     </div>
                     <div class="aprenderLista">
-                        <h4>Que vamos a aprender?</h4>
+                        <h3>¿Qué vamos a aprender?</h3>
                         <ul>
                             <li class="lista2">Reconocerlas y recolectarlas en un paseo medicinal</li>
                             <li class="lista2">Arte con ellas</li>
@@ -76,34 +78,42 @@
             
 
             <!-- INFO -->
-            <div class="card" id="info">
-                <div class="card-body">
-                    <div class="cuando">
-                        <h3>Cuando?</h3>
-                        <p>
-                            <ul>
-                                <li>📅 Domingo 12 de octubre</li>
-                                <li>⏰ De 9 a 11 hs</li>
-                                <li>🏠 En Sargento Cabral 227, Villa Allende</li>
-                                <li>Disfrutá de un espacio único para aprender, explorar y conectar con las plantas medicinales.</li>
-                            </ul>
-                        </p>
+
+            <div class="row row-cols-1 row-cols-sm-2" id="info" data-aos="fade-right">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">¿Cuándo?</h3>
+                            <p class="card-text">
+                                <ul>
+                                    <li><i class="fa-regular fa-calendar"></i> Domingo 12 de octubre</li>
+                                    <li><i class="fa-regular fa-clock"></i> De 9 a 11 hs</li>
+                                    <li><i class="fa-regular fa-house"></i> En Sargento Cabral 227, Villa Allende</li>
+                                    <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.2086822587867!2d-64.29688682468927!3d-31.29797689053657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329d03483a9551%3A0x452c8abd631fc9e7!2sSgto.%20Cabral%20227%2C%205105%20Villa%20Allende%2C%20C%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses-419!2ses!4v1760400855678!5m2!1ses-419!2ses" width="50%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Detalles para participar:</h3>
+                            <p class="card-text">
+                                <ul>
+                                    <li><i class="fa-regular fa-money-bill-1"></i> Valor: $10,000</li>
+                                    <li><i class="fa-regular fa-circle-right"></i> Forma de pago: transferencia al alias <strong>tierramailott</strong> o cuenta Lorena Camilotto.</li>
+                                    <li><i class="fa-regular fa-user"></i> Es sólo presencial.</li>
+                                    <li>Se abona por adelantado (de ese modo se reserva el lugar)</li>
+                                    <li><i class="fa-regular fa-cloud"></i> Se trabaja al aire libre y bajo techo.</li>
+                                    <li>Traé cuaderno, lapicera y tu mate.</li>
+                                </ul>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="card">
-                <div class="card-body">
-                    <h3 class="card-title">Detalles para participar:</h3>
-                    <p class="card-text">Es solo presencial. Se abona por adelantado(de ese modo se reserva el lugar)</p>
-                    <p class="card-text">Se trabaja al aire libre y bajo techo. Trae cuaderno, lapicera y tu mate.</p>
-                    <p class="card-text">!Son dos horas nutritivas!</p>
-                    <p class="card-text">💵 Valor: $10,000</p>
-                    <p class="card-text">➡️ Forma de pago: Transferencia al alias tierramailott o cuenta Lorena Camilotto.</p>
-                    <p class="card-text">Es un camino de ida y quiero que todos aprendamos sobre plantas medicinales y cómo utilizarlas.</p>
-                </div>
-            </div>
-            
+            <!-- INFO -->
 
             <!-- CARRUSEL -->
             <div id="carouselWithControls" class="carousel slide" data-bs-ride="carousel">
@@ -128,18 +138,46 @@
                 </button>
             </div>
             <!-- CARRUSEL -->
-            <!-- INFO -->
+            
+            <!-- CONTACTO -->
+            <div class="card" >
+                <div class="card-body">
+                    <div class="contacto" id="contacto">
+                        <h3>Si esto resuena con vos, te dejo mis datos de contacto:</h3>
+                        <p>
+                            <ul>
+                                <li><i class="fa-brands fa-whatsapp"></i><a href=""> WhatsApp</a></li>
+                                <li><i class="fa-brands fa-instagram"></i><a href=""> Instagram</a></li>
+                                <li><i class="fa-solid fa-envelope"></i><a href=""> Gmail</a></li>
+                                <li>Disfrutá de un espacio único para aprender, explorar y conectar con las plantas medicinales.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- CONTACTO -->
         </main>
         <!-- MAIN -->
         
 
         <!-- FOOTER -->
         <footer>
+            <p>Comparto con respeto y amor</p>
             <div class="comparto">
-                <p>Comparto con respeto y amor</p>
+                <p><i class="fa-regular fa-copyright"></i> Tierra Mailott 2020</p>
             </div>
         </footer>
         <!-- FOOTER -->
+
+
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">

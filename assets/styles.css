@@ -17,6 +17,7 @@
   color: white !important;
 }
 * body a:hover {
+  text-decoration: none;
   color: burlywood;
 }
 * body p {
@@ -63,7 +64,7 @@
 * body .card:hover {
   transform: scale(1.01);
 }
-* body .card h3, * body .card h4 {
+* body .card h3 {
   font-weight: bold;
   font-family: "Architects Daughter", cursive;
   color: white;
@@ -76,16 +77,27 @@
   font-size: 22px;
 }
 * body .card .card-body li {
-  font-size: 19px;
+  font-size: 22px;
+  padding: 2px;
+}
+* body .card .card-body .contacto {
+  margin-top: 10px;
 }
 * body .card img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 500px;
   width: 100%;
-  border-radius: 10px;
-  margin-top: 10px;
+  border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+* body .col {
+  text-align: center;
+}
+* body .col .card {
+  line-height: 38px;
+  text-align: center;
+  height: 460px;
 }
 * body #carouselWithControls .carousel-item {
   height: 600px;
@@ -105,12 +117,16 @@
   bottom: 0;
   width: 100%;
 }
+* body footer p {
+  font-size: 25px;
+  font-family: "Architects Daughter", cursive;
+  font-weight: bold;
+}
 * body footer .comparto {
   margin-top: 10px;
 }
 * body footer .comparto p {
-  font-family: "Architects Daughter", cursive;
-  font-weight: bold;
-  font-size: 25px;
+  font-weight: none;
+  font-size: 20px;
   padding-bottom: 10px;
 }/*# sourceMappingURL=styles.css.map */
