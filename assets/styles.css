@@ -131,6 +131,7 @@ body #info .card-body {
   padding: 20px;
 }
 body #info iframe {
+  margin-top: 10px;
   width: 100%;
   border: 0;
 }
@@ -169,4 +170,112 @@ body footer .comparto p {
   font-weight: normal;
   font-size: 20px;
   padding-bottom: 10px;
+}
+@media (min-width: 1189px) {
+  body li.movil {
+    display: none;
+  }
+  body #movil {
+    display: none;
+  }
+}
+@media (max-width: 1188px) {
+  body li.info {
+    display: none;
+  }
+  body #info {
+    display: none;
+  }
+  body #carouselWithControls .carousel-item {
+    height: 600px;
+  }
+}
+@media (max-width: 768px) {
+  body header h1 {
+    font-size: 40px;
+  }
+  body header p {
+    font-size: 18px;
+  }
+  body .card {
+    margin: 10px;
+    padding: 15px;
+  }
+  body .card-body p,
+  body .card-body li {
+    font-size: 18px;
+  }
+  body img {
+    height: 300px;
+  }
+  body #carouselWithControls .carousel-item {
+    height: 400px;
+  }
+}
+@media (max-width: 480px) {
+  body header h1 {
+    font-size: 30px;
+  }
+  body header p {
+    font-size: 16px;
+  }
+  body .navbar .nav .nav-item {
+    font-size: 16px;
+    margin: 0 5px;
+  }
+  body .card-body p,
+  body .card-body li {
+    font-size: 16px;
+  }
+  body img {
+    height: 200px;
+  }
+  body #carouselWithControls .carousel-item {
+    height: 300px;
+  }
+}
+@media (min-width: 431px) {
+  body nav.bg-body-tertiary {
+    display: none;
+  }
+}
+@media (max-width: 431px) {
+  body header.pc {
+    display: none;
+  }
+  body header.movil {
+    background-color: #998170 !important;
+    padding: 0px;
+    margin-bottom: 10px;
+  }
+  body header.movil .offcanvas {
+    background-color: #998170;
+    color: white !important;
+  }
+  body .card-body p,
+  body .card-body li {
+    font-size: 15px;
+  }
+}
+@media (max-width: 320px) {
+  body header h1 {
+    font-size: 24px;
+  }
+  body header p {
+    font-size: 14px;
+  }
+  body .navbar .nav .nav-item {
+    font-size: 14px;
+    margin: 0 3px;
+  }
+  body .card-body p,
+  body .card-body li {
+    font-size: 14px;
+  }
+  body img {
+    height: 150px;
+  }
+  body #carouselWithControls .carousel-item {
+    height: 250px;
+  }
 }/*# sourceMappingURL=styles.css.map */

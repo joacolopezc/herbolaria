@@ -159,6 +159,7 @@ body {
         }
 
         iframe {
+            margin-top: 10px;
             width: 100%;
             border: 0;
         }
@@ -206,6 +207,134 @@ body {
                 font-size: 20px;
                 padding-bottom: 10px;
             }
+        }
+    }
+
+    @media (min-width: 1189px){
+        li.movil{
+            display: none;
+        }
+        #movil{
+            display: none;
+        }
+    }
+    @media (max-width: 1188px){
+        li.info{
+            display: none;
+        }
+        #info{
+            display: none;
+        }
+        #carouselWithControls .carousel-item {
+            height: 600px;
+        }
+
+    
+    }
+    @media (max-width: 768px) {
+        header h1 {
+            font-size: 40px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .card {
+            margin: 10px;
+            padding: 15px;
+        }
+
+        .card-body p,
+        .card-body li {
+            font-size: 18px;
+        }
+
+        img {
+            height: 300px;
+        }
+
+        #carouselWithControls .carousel-item {
+            height: 400px;
+        }
+    }
+    @media (max-width: 480px) {
+        header h1 {
+            font-size: 30px;
+        }
+
+        header p {
+            font-size: 16px;
+        }
+        
+        .navbar .nav .nav-item {
+            font-size: 16px;
+            margin: 0 5px;
+        }
+
+        .card-body p,
+        .card-body li {
+            font-size: 16px;
+        }
+
+        img {
+            height: 200px;
+        }
+
+        #carouselWithControls .carousel-item {
+            height: 300px;
+        }
+    }
+    @media (min-width: 431px) {
+        nav.bg-body-tertiary{
+            display: none;
+        }
+    }
+    @media (max-width: 431px) {
+        header.pc{
+            display: none;
+        }
+
+        header.movil{
+            background-color: $colorc !important;
+            padding: 0px;
+            margin-bottom: 10px;
+            .offcanvas{
+                background-color: $colorc;
+                color: white !important;
+            }
+        }
+
+        .card-body p,
+        .card-body li {
+            font-size: 15px;
+        }
+    }
+    @media (max-width: 320px) {
+        header h1 {
+            font-size: 24px;
+        }
+
+        header p {
+            font-size: 14px;
+        }
+
+        .navbar .nav .nav-item {
+            font-size: 14px;
+            margin: 0 3px;
+        }
+
+        .card-body p,
+        .card-body li {
+            font-size: 14px;
+        }
+
+        img {
+            height: 150px;
+        }
+
+        #carouselWithControls .carousel-item {
+            height: 250px;
         }
     }
 }
