@@ -235,7 +235,7 @@ body footer .comparto p {
   }
 }
 @media (min-width: 431px) {
-  body nav.bg-body-tertiary {
+  body header.movil {
     display: none;
   }
 }
