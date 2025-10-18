@@ -172,17 +172,11 @@ body footer .comparto p {
   padding-bottom: 10px;
 }
 @media (min-width: 1189px) {
-  body li.movil {
-    display: none;
-  }
   body #movil {
     display: none;
   }
 }
 @media (max-width: 1188px) {
-  body li.info {
-    display: none;
-  }
   body #info {
     display: none;
   }
@@ -235,22 +229,28 @@ body footer .comparto p {
   }
 }
 @media (min-width: 431px) {
-  body header.movil {
+  body .movil {
     display: none;
   }
 }
 @media (max-width: 431px) {
-  body header.pc {
+  body .pc {
     display: none;
   }
-  body header.movil {
-    background-color: #998170 !important;
+  body header {
     padding: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
-  body header.movil .offcanvas {
+  body header .movil {
+    background-color: #998170 !important;
+  }
+  body header .movil .offcanvas {
     background-color: #998170;
     color: white !important;
+  }
+  body .card {
+    margin: 20px;
+    padding: 5px;
   }
   body .card-body p,
   body .card-body li {

@@ -21,40 +21,43 @@
     </head>
     <body>
         <!-- HEDAER MOVIL -->
-        <header class="movil">
-            <nav class="navbar">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">HERBOLARIA</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">HERBOLARIA</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <header>
+            <div class="movil">
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">HERBOLARIA</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">HERBOLARIA</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#taller">taller</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#movil">información</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacto">contacto</a>
+                            </li>
+                            </ul>
+                        </div>
+                        </div>
                     </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#taller">taller</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#movil">información</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contacto">contacto</a>
-                        </li>
-                        </ul>
-                    </div>
-                    </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </header>
         <!-- HEDAER MOVIL -->
         
         <!-- HEADER -->
-        <header class="pc">
-            <div class="lead text-center py-3">
+        <header>
+            <div class="pc">
+                <div class="lead text-center py-3">
                 <h1>HERBOLARIA</h1>
                 <p>taller y arte con plantas medicinales</p>
             </div>
@@ -67,15 +70,13 @@
                         <li class="nav-item info">
                             <a class="nav-link" href="#info">información</a>
                         </li>
-                        <li class="nav-item movil">
-                            <a class="nav-link" href="#movil">información</a>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contacto">contacto</a>
                         </li>
                     </ul>
                 </div>
             </nav>
+            </div>
         </header>        
         <!-- HEADER -->
         
@@ -88,7 +89,7 @@
                     <h2 class="card-title">Sobre Mi</h2>
                     <p class="card-text">Soy <strong>Lorena Camilotto</strong>. Desde mi experiencia con las plantas, con diferentes miradas y estudios de las mismas, descubrí el poder que tienen y como acompañan nuestros procesos, desde el paseo medicinal con sus aromas y texturas aprendiendo desde la observación hasta llegar a la elaboración del producto que deseamos realizar, por todo eso... te invito a unirte al mundo herbal.</p>
                 </div>
-                <img src="./images/loredes.jpeg" class="card-img-bottom" alt="card-img-bottom">
+                <img src="/images/loredes.jpeg" class="card-img-bottom" alt="card-img-bottom">
             </div>
             <!-- SOBRE MI -->
 
@@ -199,13 +200,13 @@
             <div id="carouselWithControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
                 <div class="carousel-inner">
                     <div class="carousel-item">
-                        <img src="./images/taller1.jpeg" class="d-block w-100" alt="Recoleccion de Plantas Medicinales">
+                        <img src="/images/taller1.jpeg" class="d-block w-100" alt="Recoleccion de Plantas Medicinales">
                     </div>
                     <div class="carousel-item">
-                        <img src="./images/taller2.jpeg" class="d-block w-100" alt="Recoleccion de Plantas">
+                        <img src="/images/taller2.jpeg" class="d-block w-100" alt="Recoleccion de Plantas">
                     </div>
                     <div class="carousel-item active">
-                        <img src="./images/grupo219.jpeg" class="d-block w-100" alt="Grupo del Taller">
+                        <img src="/images/grupo219.jpeg" class="d-block w-100" alt="Grupo del Taller">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselWithControls" data-bs-slide="prev">
@@ -250,10 +251,33 @@
 
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
-            AOS.init();
+            setTimeout(function() {
+                AOS.init();
+                AOS.refresh();
+            }, 100);
         </script>
 
     
+
+<script>
+    // Cerrar offcanvas y luego navegar a la sección
+    document.querySelectorAll('#offcanvasNavbar .nav-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault(); // Evita el salto inmediato
+            const target = this.getAttribute('href');
+            const offcanvas = bootstrap.Offcanvas.getInstance(document.getElementById('offcanvasNavbar'));
+            
+            offcanvas.hide(); // Cierra el menú
+            
+            // Espera a que se cierre y luego navega
+            setTimeout(() => {
+                document.querySelector(target).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }, 300);
+        });
+    });
+    </script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
     <!-- Bootstrap CSS -->
