@@ -1,58 +1,72 @@
-@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Chewy&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+/* Variables */
+/* Estilos globales */
 * {
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Architects Daughter", cursive;
   scroll-behavior: smooth;
 }
-* body {
+
+body {
   background-image: url("../images/herbolaria2.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* Header */
+  /* Tarjetas generales */
+  /* Imágenes */
+  /* Columnas */
+  /* Carrusel */
+  /* Estilos específicos para #info */
+  /* Contacto */
+  /* Footer */
 }
-* body a {
+body a {
   text-decoration: none;
   color: white !important;
 }
-* body a:hover {
-  text-decoration: none;
-  color: burlywood;
+body a:hover {
+  color: #694d3a !important;
 }
-* body p {
-  font-size: 20px;
+body p {
+  font-size: 22px;
 }
-* body li {
+body li {
+  font-size: 22px;
   list-style: none;
 }
-* body h2 {
-  font-family: "Architects Daughter", cursive;
+body h2 {
+  font-family: "Chewy", system-ui;
   font-weight: bold;
   color: white;
 }
-* body header {
-  /* background-color: $colorp; */
+body header {
   text-align: center;
   padding-top: 2%;
   color: white;
 }
-* body header h1 {
+body header h1 {
   font-size: 60px;
   font-weight: bold;
   font-family: "Architects Daughter", cursive;
 }
-* body header .navbar .nav .nav-item {
+body header p {
+  font-size: 25px;
+}
+body header .navbar .nav .nav-item {
+  font-size: 20px;
   border: 1px solid white;
   border-radius: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 10px;
   transition: transform 0.2s;
 }
-* body header .navbar .nav .nav-item:hover {
+body header .navbar .nav .nav-item:hover {
   transform: scale(1.05);
 }
-* body .card {
+body .card {
   background-color: #998170;
   opacity: 0.93;
   border-radius: 10px;
@@ -61,29 +75,26 @@
   margin: 20px;
   transition: transform 0.2s;
 }
-* body .card:hover {
+body .card:hover {
   transform: scale(1.01);
 }
-* body .card h3 {
+body .card h3 {
   font-weight: bold;
-  font-family: "Architects Daughter", cursive;
+  font-family: "Chewy", system-ui;
   color: white;
 }
-* body .card .card-body {
+body .card .card-body {
   color: white;
   text-align: center;
 }
-* body .card .card-body p {
+body .card .card-body p {
   font-size: 22px;
 }
-* body .card .card-body li {
+body .card .card-body li {
   font-size: 22px;
   padding: 2px;
 }
-* body .card .card-body .contacto {
-  margin-top: 10px;
-}
-* body .card img {
+body img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 500px;
@@ -91,24 +102,53 @@
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-* body .col {
+body .col {
   text-align: center;
 }
-* body .col .card {
+body .col .card {
   line-height: 38px;
   text-align: center;
-  height: 460px;
 }
-* body #carouselWithControls .carousel-item {
-  height: 600px;
-  padding: 2%;
+body #carouselWithControls .carousel-item {
+  height: 850px;
+  width: 100%;
+  padding: 5%;
 }
-* body #carouselWithControls .carousel-item img {
+body #carouselWithControls .carousel-item img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-* body footer {
+body #info {
+  display: flex; /* Coloca las tarjetas en línea */
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten en pantallas pequeñas */
+}
+body #info .card {
+  height: auto; /* Ajusta la altura automáticamente */
+  min-height: 500px; /* Establece una altura mínima para mantener simetría */
+}
+body #info .card-body {
+  padding: 20px;
+}
+body #info iframe {
+  width: 100%;
+  border: 0;
+}
+body #contacto ul {
+  display: flex; /* Coloca los enlaces en línea horizontal */
+  justify-content: center; /* Centra los enlaces horizontalmente */
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina el padding predeterminado */
+  gap: 20px; /* Espaciado entre los enlaces */
+}
+body #contacto ul li a {
+  font-size: 2rem; /* Ajusta el tamaño de los íconos */
+  transition: transform 0.3s ease; /* Efecto de hover */
+}
+body #contacto ul li a:hover {
+  transform: scale(1.2); /* Aumenta el tamaño al pasar el mouse */
+}
+body footer {
   opacity: 0.93;
   text-align: center;
   padding: 10px;
@@ -117,16 +157,16 @@
   bottom: 0;
   width: 100%;
 }
-* body footer p {
+body footer p {
   font-size: 25px;
   font-family: "Architects Daughter", cursive;
   font-weight: bold;
 }
-* body footer .comparto {
+body footer .comparto {
   margin-top: 10px;
 }
-* body footer .comparto p {
-  font-weight: none;
+body footer .comparto p {
+  font-weight: normal;
   font-size: 20px;
   padding-bottom: 10px;
 }/*# sourceMappingURL=styles.css.map */

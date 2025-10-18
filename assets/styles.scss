@@ -1,155 +1,210 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Chewy&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+/* Variables */
 $colorp: #156034;
 $colorc: #998170;
 $font: "Architects Daughter", cursive;
+$font2: "Chewy", system-ui;
 $opacity: 0.93;
 
-*{
+/* Estilos globales */
+* {
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: $font;
     scroll-behavior: smooth;
+}
 
-    body {
-        background-image: url('../images/herbolaria2.jpeg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        a{
-            text-decoration: none;
-            color: white !important; 
-            &:hover{
-                text-decoration: none;
-                color: burlywood;
-            }
-        }
-        p{
-            font-size: 20px;
-        }
+body {
+    background-image: url('../images/herbolaria2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-        li{
-            list-style: none;
+    a {
+        text-decoration: none;
+        color: white !important;
+        &:hover {
+            color: #694d3a !important;
         }
+    }
 
-        h2{
-            font-family: $font;
+    p {
+        font-size: 22px;
+    }
+
+    li {
+        font-size: 22px;
+        list-style: none;
+    }
+
+    h2 {
+        font-family: $font2;
+        font-weight: bold;
+        color: white;
+    }
+
+    /* Header */
+    header {
+        text-align: center;
+        padding-top: 2%;
+        color: white;
+
+        h1 {
+            font-size: 60px;
             font-weight: bold;
-            color: white;
+            font-family: $font;
         }
 
-        header{
-            /* background-color: $colorp; */
-            text-align: center;
-            padding-top: 2%;
-            color: white;
+        p {
+            font-size: 25px;
+        }
 
-            h1{
-                font-size: 60px;
-                font-weight: bold;
-                font-family: $font;
-            }
-
-            .navbar{
-                .nav{
-                    .nav-item{
-                        border: 1px solid white;
-                        border-radius: 30px;
-                        margin-left: 10px;
-                        margin-right: 10px;
-                        transition: transform 0.2s;
-                        &:hover{
-                            transform: scale(1.05);
-            }
+        .navbar {
+            .nav {
+                .nav-item {
+                    font-size: 20px;
+                    border: 1px solid white;
+                    border-radius: 30px;
+                    margin: 0 10px;
+                    transition: transform 0.2s;
+                    &:hover {
+                        transform: scale(1.05);
                     }
                 }
             }
         }
+    }
 
-        .card{
-            background-color: $colorc;
-            opacity: $opacity;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            margin: 20px;
-            transition: transform 0.2s;
-            &:hover{
-                transform: scale(1.01);
-            }
-            h3{
-                font-weight: bold;
-                font-family: $font;
-                color: white;
-            }
-            
-            .card-body{
-                color: white;
-                text-align: center;
-                p{
-                    font-size: 22px;
-                }
-                li{
-                    font-size: 22px;
-                    padding: 2px;
-                }
+    /* Tarjetas generales */
+    .card {
+        background-color: $colorc;
+        opacity: $opacity;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        margin: 20px;
+        transition: transform 0.2s;
 
-                .contacto{
-                    margin-top: 10px;
-                }
+        &:hover {
+            transform: scale(1.01);
         }
 
-        img{
-            object-fit: cover;
-            height: 500px;
-            width: 100%;
-            border-radius: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        }
-
-        .col{
-            text-align: center;
-            .card{
-                line-height: 38px;
-                text-align: center;
-                height: 460px;
-            }
-
-        }
-        
-        #carouselWithControls{
-            .carousel-item{
-                height: 600px;
-                padding: 2%;
-                img{
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
-        }
-
-        footer{
-            opacity: $opacity;
-            text-align: center;
-            padding: 10px;
+        h3 {
+            font-weight: bold;
+            font-family: $font2;
             color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            p{
-                font-size: 25px;
-                font-family: $font;
-                font-weight: bold;
+        }
+
+        .card-body {
+            color: white;
+            text-align: center;
+
+            p {
+                font-size: 22px;
             }
-            .comparto{
-                margin-top: 10px;
-                p {
-                    font-weight: none;
-                    font-size: 20px;
-                    padding-bottom: 10px;
-                }
+
+            li {
+                font-size: 22px;
+                padding: 2px;
+            }
+        }
+    }
+
+    /* Imágenes */
+    img {
+        object-fit: cover;
+        height: 500px;
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Columnas */
+    .col {
+        text-align: center;
+
+        .card {
+            line-height: 38px;
+            text-align: center;
+        }
+    }
+
+    /* Carrusel */
+    #carouselWithControls {
+        .carousel-item {
+            height: 850px;
+            width: 100%;
+            padding: 5%;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    /* Estilos específicos para #info */
+    #info {
+        display: flex; /* Coloca las tarjetas en línea */
+        flex-wrap: wrap; /* Permite que las tarjetas se ajusten en pantallas pequeñas */
+        .card {
+            height: auto; /* Ajusta la altura automáticamente */
+            min-height: 500px; /* Establece una altura mínima para mantener simetría */
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            border: 0;
+        }
+    }
+
+    /* Contacto */
+    #contacto ul {
+        display: flex; /* Coloca los enlaces en línea horizontal */
+        justify-content: center; /* Centra los enlaces horizontalmente */
+        list-style: none; /* Elimina los puntos de la lista */
+        padding: 0; /* Elimina el padding predeterminado */
+        gap: 20px; /* Espaciado entre los enlaces */
+    }
+    
+    #contacto ul li a {
+        font-size: 2rem; /* Ajusta el tamaño de los íconos */
+        transition: transform 0.3s ease; /* Efecto de hover */
+    }
+    
+    #contacto ul li a:hover {
+        transform: scale(1.2); /* Aumenta el tamaño al pasar el mouse */
+    }
+
+    /* Footer */
+    footer {
+        opacity: $opacity;
+        text-align: center;
+        padding: 10px;
+        color: white;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+
+        p {
+            font-size: 25px;
+            font-family: $font;
+            font-weight: bold;
+        }
+
+        .comparto {
+            margin-top: 10px;
+
+            p {
+                font-weight: normal;
+                font-size: 20px;
+                padding-bottom: 10px;
             }
         }
     }

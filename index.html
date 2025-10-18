@@ -4,6 +4,17 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <script type="text/javascript">
+            window.onload = function(){
+            (function(d, script) {
+            script = d.createElement('script');
+            script.type = 'text/javascript';
+            script.async = true;
+            script.src = 'https://w.app/widget-v1/KU059c.js';
+            d.getElementsByTagName('head')[0].appendChild(script);
+            }(document));
+            };
+            </script>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="assets/styles.css">
         <title>Taller de Herbolaria</title>
@@ -38,7 +49,7 @@
         <main>
             <!-- SOBRE MI -->
             <div class="card" data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom">
+            data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
                 <div class="card-body">
                     <h2 class="card-title">Sobre Mi</h2>
                     <p class="card-text">Soy <strong>Lorena Camilotto</strong>. Desde mi experiencia con las plantas, con diferentes miradas y estudios de las mismas, descubrí el poder que tienen y como acompañan nuestros procesos, desde el paseo medicinal con sus aromas y texturas aprendiendo desde la observación hasta llegar a la elaboración del producto que deseamos realizar, por todo eso... te invito a unirte al mundo herbal.</p>
@@ -48,10 +59,10 @@
             <!-- SOBRE MI -->
 
             <!-- QUE VAMOS A APRENDER -->
-            <div class="card" id="taller" data-aos="flip-left">
+            <div class="card" id="taller" data-aos="fade-left" data-aos-duration="2000">
                 <div class="card-body">
                     <div class="aprender">
-                        <h3>Grupal, dinámico y divertido!</h3>
+                        <h3>¡Grupal, dinámico y divertido!</h3>
                         <p>Todo relacionado a plantas medicinales, comestibles y aromáticas</p>
                     </div>
                     <div class="aprenderLista">
@@ -79,17 +90,17 @@
 
             <!-- INFO -->
 
-            <div class="row row-cols-1 row-cols-sm-2" id="info" data-aos="fade-right">
+            <div class="row row-cols-1 row-cols-sm-2" id="info" data-aos="fade-right" data-aos-duration="2000">
                 <div class="col">
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title">¿Cuándo?</h3>
                             <p class="card-text">
                                 <ul>
-                                    <li><i class="fa-regular fa-calendar"></i> Domingo 12 de octubre</li>
+                                    <li><i class="fa-regular fa-calendar"></i> Domingo 26 de octubre</li>
                                     <li><i class="fa-regular fa-clock"></i> De 9 a 11 hs</li>
                                     <li><i class="fa-regular fa-house"></i> En Sargento Cabral 227, Villa Allende</li>
-                                    <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.2086822587867!2d-64.29688682468927!3d-31.29797689053657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329d03483a9551%3A0x452c8abd631fc9e7!2sSgto.%20Cabral%20227%2C%205105%20Villa%20Allende%2C%20C%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses-419!2ses!4v1760400855678!5m2!1ses-419!2ses" width="50%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+                                    <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.2086822587867!2d-64.29688682468927!3d-31.29797689053657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329d03483a9551%3A0x452c8abd631fc9e7!2sSgto.%20Cabral%20227%2C%205105%20Villa%20Allende%2C%20C%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses-419!2ses!4v1760400855678!5m2!1ses-419!2ses" width="50%" height="auto" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
                                 </ul>
                             </p>
                         </div>
@@ -116,16 +127,16 @@
             <!-- INFO -->
 
             <!-- CARRUSEL -->
-            <div id="carouselWithControls" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselWithControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
                 <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="./images/taller1.jpeg" class="d-block w-100" alt="Recoleccion de Plantas Medicinales">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/taller2.jpeg" class="d-block w-100" alt="Recoleccion de Plantas">
+                    </div>
                     <div class="carousel-item active">
-                        <img src="./images/loredes.jpeg" class="d-block w-100" alt="Slide 1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/herbolaria1.jpeg" class="d-block w-100" alt="Slide 2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/herbolaria2.jpeg" class="d-block w-100" alt="Slide 3">
+                        <img src="./images/grupo219.jpeg" class="d-block w-100" alt="Grupo del Taller">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselWithControls" data-bs-slide="prev">
@@ -140,18 +151,16 @@
             <!-- CARRUSEL -->
             
             <!-- CONTACTO -->
-            <div class="card" >
+            <div class="card contacto" >
                 <div class="card-body">
-                    <div class="contacto" id="contacto">
+                    <div id="contacto">
                         <h3>Si esto resuena con vos, te dejo mis datos de contacto:</h3>
-                        <p>
                             <ul>
-                                <li><i class="fa-brands fa-whatsapp"></i><a href=""> WhatsApp</a></li>
-                                <li><i class="fa-brands fa-instagram"></i><a href=""> Instagram</a></li>
-                                <li><i class="fa-solid fa-envelope"></i><a href=""> Gmail</a></li>
-                                <li>Disfrutá de un espacio único para aprender, explorar y conectar con las plantas medicinales.</li>
+                                <li><a href="https://w.app/tierramailott" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                <li><a href="https://www.instagram.com/tierra.mailott?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="mailto:tierramailott@gmail.com?Subject=Consulta" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
                             </ul>
-                        </p>
+                            <p>Disfrutá de un espacio único para aprender, explorar y conectar con las plantas medicinales.</p>
                     </div>
                 </div>
             </div>
@@ -159,12 +168,11 @@
         </main>
         <!-- MAIN -->
         
-
         <!-- FOOTER -->
         <footer>
             <p>Comparto con respeto y amor</p>
             <div class="comparto">
-                <p><i class="fa-regular fa-copyright"></i> Tierra Mailott 2020</p>
+                <p><i class="fa-regular fa-copyright"></i> Tierra Mailott 2025</p>
             </div>
         </footer>
         <!-- FOOTER -->
